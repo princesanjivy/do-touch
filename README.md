@@ -11,7 +11,7 @@ To use this plugin, add `do_touch` as a dependency in your `pubspec.yaml` .
 
 Also add this service tag in your `AndroidManifest.xml` file.
 
-```
+```xml
 <service android:name="com.example.do_touch.MyAccessibilityService"
     android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
     android:label="Auto Join"
@@ -37,7 +37,7 @@ if not `getPermission` use this to navigate user to the consent screen.
 
 ## Example
 
-```
+```dart
 import 'package:do_touch/do_touch.dart';
 
 await DoTouch.touchPoint(
